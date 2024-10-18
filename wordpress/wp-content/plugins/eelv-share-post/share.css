@@ -1,0 +1,48 @@
+/* CSS Document */
+/********************** EMBED */
+.embeelv{
+  background:#F6F6F6;
+  box-shadow:#DDD 0px 2px 10px;
+  padding:10px;
+  border-left:#7FB902 5px solid;
+  clear:both;
+}
+.embeelv p{
+  color:#777;
+}
+.embeelv p u{
+  color:#7FB902;
+}
+.embeelv img{
+  max-width:50%;
+  height:auto;
+  float:left;
+  margin:0 10px 3px 0;
+  background:#FFF;
+  padding:2px;
+  border:#DDD 1px solid;
+}
+.embeelv iframe{
+  margin:10px 0;
+  border:none;
+}
+
+#wp-admin-bar-embed_post_menu .ab-icon:before{
+	content:'';
+	top:2px;
+}
+
+.embeelv_blank{
+	display:inline-block;
+	width:17px;
+	height:15px;
+	background:url('img/link.png') no-repeat center center;	
+}
+.embeelv_blank span{
+	display:none;	
+}
+/******/
+#eelv_share_from_admin select{
+	width:80%;
+	margin-left:10%;
+}

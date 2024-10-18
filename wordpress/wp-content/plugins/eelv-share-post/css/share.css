@@ -1,0 +1,34 @@
+/* CSS Document */
+/********************** EMBED */
+.embeelv{
+  background:#F6F6F6;
+  box-shadow:#DDD 0px 2px 10px;
+  padding:10px;
+  border-left:#7FB902 5px solid;
+  clear:both;
+}
+.embeelv p{
+  color:#777;
+}
+.embeelv p u{
+  color:#7FB902;
+}
+.embeelv img{
+  max-width:50%;
+  height:auto;
+  float:left;
+  margin:0 10px 3px 0;
+  background:#FFF;
+  padding:2px;
+  border:#DDD 1px solid;
+}
+.embeelv iframe{
+  margin:10px 0;
+  border:none;
+}
+
+/******/
+#eelv_share_from_admin select{
+	width:80%;
+	margin-left:10%;
+}
