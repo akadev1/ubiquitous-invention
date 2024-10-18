@@ -1,0 +1,114 @@
+/*--------------------------------------
+COMPONENTS
+---------------------------------------*/
+input[type=text],
+input[type=password],
+input[type=checkbox],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=radio],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+input[type=search],
+select,
+textarea {
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: none;
+    color: #555;
+    outline: 0;
+    transition: .2s border-color ease-in-out;
+}
+
+.description {
+    font-size: 0.9rem!important;
+}
+
+input,
+input.code {
+    font-size:1rem;
+    padding: 3px 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=email]:focus,
+input[type=month]:focus,
+input[type=number]:focus,
+input[type=radio]:focus,
+input[type=tel]:focus,
+input[type=time]:focus,
+input[type=url]:focus,
+input[type=week]:focus,
+input[type=search]:focus,
+textarea:focus {
+    box-shadow: none;
+}
+
+.media-frame input[type=text]:focus,
+.media-frame input[type=password]:focus,
+.media-frame input[type=number]:focus,
+.media-frame input[type=search]:focus,
+.media-frame input[type=email]:focus,
+.media-frame input[type=url]:focus,
+.media-frame select:focus,
+.media-frame textarea:focus {
+    box-shadow: none;
+    outline: rgb(94, 158, 215) auto 5px;
+    outline: -webkit-focus-ring-color auto 5px;
+    border-color: transparent;
+}
+
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    box-shadow: none;
+    outline: none;
+    border-color:#ddd;
+    background-color:#ddd;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:focus {
+    box-shadow: none;
+}
+
+.wrap .add-new-h2 {
+    background: #ff6669;
+    color: white;
+}
+
+.wrap .add-new-h2:active {
+    background: #333
+}
+
+.wrap .add-new-h2:hover {
+    background: #ddd
+}
+
+input[type=number].tiny-text {
+    width: 70px;
+}
+
+.form-wrap p {
+    font-size:0.9rem;
+    margin: 1rem 0;
+}
+
+#editable-post-name input {
+  height:100%;
+}

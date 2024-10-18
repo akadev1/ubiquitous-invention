@@ -1,0 +1,83 @@
+/*--------------------------------------
+BUTTONS
+---------------------------------------*/
+.wp-core-ui .button,
+.wp-core-ui .button-primary, 
+.wp-core-ui .button-secondary {
+  font-weight: 500;
+  transition: .2s;
+}
+/*--------------------------------------
+BUTTON
+---------------------------------------*/
+.wp-core-ui .button {
+  color: #555;
+  /*
+  border-color: #ccc;
+  background: #f7f7f7;
+  */
+  box-shadow: none;
+  vertical-align: top;
+}
+.wp-core-ui .button:nth-child(1n+2) {
+  margin-left:5px;
+}
+/*--------------------------------------
+PRIMARY
+---------------------------------------*/
+.wp-core-ui .button-primary {
+  color:#fff;
+  /*
+  background:#2980b9;
+  border-color:#2980b9;
+  */
+  box-shadow:none;
+}
+.wp-core-ui .button-primary.green {
+  color:#fff;
+  background:#4CAF50;
+  border-color:#4CAF50;
+  text-shadow:none;
+}
+/*--------------------------------------
+SECONDARY
+---------------------------------------*/
+.wp-core-ui .button-secondary {
+  color:#2980b9;
+  background:none;
+  border-color:currentColor;
+  box-shadow:none;
+}
+.wp-core-ui .button-secondary .dashicons {
+  color:inherit!important;
+  margin-right:5px;
+}
+/*--------------------------------------
+ACTIVE HOVER
+---------------------------------------*/
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:active,
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button-secondary:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button-secondary:active {
+  color:#fff;
+  background:#2980b9;
+  border-color:#2980b9;
+}
+/*--------------------------------------
+SCREEN READER
+---------------------------------------*/
+.screen-reader-text, .screen-reader-text span, .ui-helper-hidden-accessible {
+    position: absolute!important;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    word-wrap: normal!important;
+}
