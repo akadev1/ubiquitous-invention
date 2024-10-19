@@ -151,7 +151,11 @@
 			var content = event.content;
 
 			if ( content ) {
-				content = tinymce.trim( content.replace( /<[^>]+>/g, '' ) );
+				let previous;
+				do {
+					previous = content;
+					content = tinymce.trim( content.replace( /<[^>]+>/g, '' ) );
+				} while (content !== previous);
 
 				if ( /^https?:\/\/\S+$/i.test( content ) ) {
 					event.content = content;
