@@ -53,7 +53,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 							'<strong>Version %1$s</strong> addressed %2$s bugs.',
 							26
 						),
-						'6.6.2',
+						 get_bloginfo( 'version' ),
 						'26'
 					);
 					?>
@@ -64,7 +64,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						sprintf(
 							/* translators: %s: WordPress version. */
 							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
-							sanitize_title( '6.6.2' )
+							sanitize_title( get_bloginfo( 'version' ) )
 						)
 					);
 					?>
@@ -78,7 +78,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 							'<strong>Version %1$s</strong> addressed %2$s bugs.',
 							16
 						),
-						'6.6.1',
+						get_bloginfo( 'version' ),
 						'16'
 					);
 					?>
@@ -89,7 +89,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						sprintf(
 							/* translators: %s: WordPress version. */
 							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
-							sanitize_title( '6.6.1' )
+							sanitize_title( get_bloginfo( 'version' ) )
 						)
 					);
 					?>
@@ -218,7 +218,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 
 		<div class="about__section has-3-columns">
 			<div class="column about__image is-vertically-aligned-top">
-				<img src="<?php echo esc_url( admin_url( 'images/about-release-badge.svg?ver=6.6' ) ); ?>" alt="" height="280" width="280" />
+				<img src="<?php echo esc_url( admin_url( 'images/about-release-badge.svg?ver=' . get_bloginfo( 'version' ) ) ); ?>" alt="" height="280" width="280" />
 			</div>
 			<div class="column is-vertically-aligned-center" style="grid-column-end:span 2">
 				<h3>
@@ -257,7 +257,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						/* translators: 1: WordPress Field Guide link, 2: WordPress version number. */
 						__( 'Explore the <a href="%1$s">WordPress %2$s Field Guide</a>. Learn about the changes in this release with detailed developer notes to help you build with WordPress.' ),
 						esc_url( __( 'https://make.wordpress.org/core/wordpress-6-6-field-guide/' ) ),
-						'6.6'
+						get_bloginfo( 'version' )
 					);
 					?>
 				</p>
@@ -278,9 +278,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						sprintf(
 							/* translators: %s: WordPress version number. */
 							esc_url( __( 'https://wordpress.org/documentation/wordpress-version/version-%s/' ) ),
-							'6-6'
+							sanitize_title( get_bloginfo( 'version' ) )
 						),
-						'6.6'
+						get_bloginfo( 'version' )
 					);
 					?>
 				</p>
